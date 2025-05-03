@@ -91,17 +91,38 @@
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Sublimación Textil</h3>
                     <p class="text-gray-600">Personalizamos playeras, sudaderas, uniformes deportivos y más con calidad fotográfica.</p>
-                     <img src="https://www.dropbox.com/scl/fi/8e0df1lh78bza1j1pkpa2/IMG-20240605-WA0036.jpg?rlkey=wvr12ngnqi63en2nwhv3pakmc&st=v362l8cq&dl=1" alt="Imagen de trabajo realizado - Sublimación Textil 1" class="w-full h-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar+imagen+Textil+1'">
-                        <div class="p-2 text-center text-sm font-semibold text-gray-700">Trabajo Textil 1</div>
+                     <img src="https://placehold.co/600x400/CE1126/FFFFFF?text=Imagen+Textil" alt="Imagen de Sublimación Textil" class="mt-4 rounded-md mx-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar'">
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+                    <div class="mb-4 text-mexico-green">
+                        <i class="fas fa-mug-hot fa-3x"></i>
                     </div>
-                     <div class="rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                        <img src="https://www.dropbox.com/scl/fi/hyih1oevaayq23rucpuixjt5/IMG-20240719-WA0009.jpg?rlkey=l3de6jpr1niv284hdty2rblrz&st=fhdo4v3o&dl=1" alt="Imagen de trabajo realizado - Sublimación Textil 2" class="w-full h-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar+imagen+Textil+2'">
-                        <div class="p-2 text-center text-sm font-semibold text-gray-700">Trabajo Textil 2</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Tazas Personalizadas</h3>
+                    <p class="text-gray-600">Creamos tazas únicas para regalos, eventos o tu negocio. Diseños resistentes al lavado.</p>
+                     <img src="https://placehold.co/600x400/006847/FFFFFF?text=Imagen+Taza" alt="Imagen de Taza Personalizada" class="mt-4 rounded-md mx-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar'">
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+                     <div class="mb-4 text-gray-700">
+                        <i class="fas fa-mouse-pointer fa-3x"></i>
                     </div>
-                    <div class="rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                         <img src="https://www.dropbox.com/scl/fi/qaqel3buule728p3mevg9/IMG_20241013_190923.jpg?rlkey=mps2p46wkcjrja4ndav7lhif7&st=6w67s8uw&dl=1" alt="Imagen de trabajo realizado - Sublimación Textil 3" class="w-full h-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar+imagen+Textil+3'">
-                        <div class="p-2 text-center text-sm font-semibold text-gray-700">Trabajo Textil 3</div>
-                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Otros Artículos</h3>
+                    <p class="text-gray-600">Sublimamos mouse pads, llaveros, termos, gorras y una gran variedad de promocionales.</p>
+                     <img src="https://placehold.co/600x400/eeeeee/333333?text=Imagen+Articulos" alt="Imagen de Otros Artículos" class="mt-4 rounded-md mx-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Galería de Trabajos</h2>
+
+            <div class="mb-8">
+                <button class="w-full text-left text-xl font-semibold text-gray-800 py-3 px-4 bg-white rounded-md shadow-md hover:bg-gray-50 transition duration-300 focus:outline-none flex justify-between items-center" id="toggle-textil-gallery">
+                    <span>Sublimación Textil</span>
+                    <i class="fas fa-chevron-down" id="icon-textil"></i>
+                </button>
+                <div id="textil-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 hidden">
                     <div class="rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
                          <img src="https://www.dropbox.com/scl/fi/s88459nvflwizpaadbruo/IMG-20231204-WA0054.jpg?rlkey=woe1k5dsz4a081shssr1bkxk4&st=llul4tfc&dl=1" alt="Imagen de trabajo realizado - Sublimación Textil 6" class="w-full h-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar+imagen+Textil+6'">
                         <div class="p-2 text-center text-sm font-semibold text-gray-700">Trabajo Textil 6</div>
@@ -227,24 +248,35 @@
         const menuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when a link is clicked
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
-        });
+
+            // Close mobile menu when a link is clicked
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        } else {
+             console.error("Mobile menu elements not found!");
+        }
+
 
         // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
+        const yearSpan = document.getElementById('year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        } else {
+            console.error("Year span element not found!");
+        }
+
 
         // JavaScript for Gallery Section Toggles
-        // Added DOMContentLoaded listener to ensure elements are loaded before script runs
-        document.addEventListener('DOMContentLoaded', function() {
+        // Using window.onload to ensure all elements and assets are fully loaded
+        window.onload = function() {
             const textilButton = document.getElementById('toggle-textil-gallery');
             const textilGallery = document.getElementById('textil-gallery');
             const iconTextil = document.getElementById('icon-textil');
@@ -257,11 +289,27 @@
             const otrosGallery = document.getElementById('otros-gallery');
             const iconOtros = document.getElementById('icon-otros');
 
+            // Log the elements to see if they are found
+            console.log("Textil Button:", textilButton);
+            console.log("Textil Gallery:", textilGallery);
+            console.log("Icon Textil:", iconTextil);
+            console.log("Tazas Button:", tazasButton);
+            console.log("Tazas Gallery:", tazasGallery);
+            console.log("Icon Tazas:", iconTazas);
+            console.log("Otros Button:", otrosButton);
+            console.log("Otros Gallery:", otrosGallery);
+            console.log("Icon Otros:", iconOtros);
+
+
             // Function to toggle gallery visibility and icon rotation
             function toggleGallery(galleryElement, iconElement) {
-                galleryElement.classList.toggle('hidden');
-                iconElement.classList.toggle('fa-chevron-down');
-                iconElement.classList.toggle('fa-chevron-up');
+                if (galleryElement && iconElement) {
+                    galleryElement.classList.toggle('hidden');
+                    iconElement.classList.toggle('fa-chevron-down');
+                    iconElement.classList.toggle('fa-chevron-up');
+                } else {
+                     console.error("Attempted to toggle gallery with missing elements:", galleryElement, iconElement);
+                }
             }
 
             // Add event listeners to buttons only if elements exist
@@ -269,24 +317,31 @@
                 textilButton.addEventListener('click', () => {
                     toggleGallery(textilGallery, iconTextil);
                 });
+            } else {
+                 console.error("Textil toggle button not found!");
             }
 
             if(tazasButton) {
                 tazasButton.addEventListener('click', () => {
                     toggleGallery(tazasGallery, iconTazas);
                 });
+            } else {
+                 console.error("Tazas toggle button not found!");
             }
 
             if(otrosButton) {
                 otrosButton.addEventListener('click', () => {
                     toggleGallery(otrosGallery, iconOtros);
                 });
+            } else {
+                 console.error("Otros toggle button not found!");
             }
-        });
+        };
 
     </script>
 
 </body>
 </html>
+
 
 

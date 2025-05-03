@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sublimaciones Guerrero - Calidad y Diseño</title>
+    <title>Sublimaciones Guerrero - Calidad y Diseño Profesional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Apply Inter font globally */
+        /* Apply Inter font globally, Roboto for headings */
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Custom styles for Mexican flag colors */
-        .bg-mexico-green { background-color: #006847; }
-        .text-mexico-green { color: #006847; }
-        .border-mexico-green { border-color: #006847; }
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Custom styles - Using Blue as primary color */
+        /* Removed custom green colors */
 
         .bg-mexico-red { background-color: #CE1126; }
         .text-mexico-red { color: #CE1126; }
@@ -39,6 +41,51 @@
             height: auto;
             display: block; /* Prevents bottom space */
         }
+
+        /* Floating Social Media Icons Container */
+        .social-icons-float {
+            position: fixed;
+            right: 10px; /* Adjust as needed */
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between icons */
+        }
+
+        .social-icons-float a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px; /* Icon size */
+            height: 40px; /* Icon size */
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .social-icons-float a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Specific icon colors */
+        .social-icons-float .fa-facebook-f { background-color: #1877F2; } /* Facebook Blue */
+        .social-icons-float .fa-instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); } /* Instagram Gradient */
+        .social-icons-float .fa-x-twitter { background-color: #000000; } /* X Black */
+        .social-icons-float .fa-whatsapp { background-color: #25D366; } /* WhatsApp Green */
+
+
+        /* Optional: Hide floating icons on very small screens if they are intrusive */
+        @media (max-width: 640px) {
+             .social-icons-float {
+                display: none;
+             }
+        }
+
+
     </style>
 </head>
 <body class="bg-gray-100">
@@ -49,11 +96,11 @@
                  <div class="text-xl md:text-2xl font-bold text-blue-500">Promocionales Guerrero</div>
                  </div>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="#inicio" class="text-gray-700 hover:text-mexico-green transition duration-300">Inicio</a>
-                <a href="#servicios" class="text-gray-700 hover:text-mexico-green transition duration-300">Servicios</a>
-                <a href="#galeria" class="text-gray-700 hover:text-mexico-green transition duration-300">Galería</a>
-                <a href="#nosotros" class="text-gray-700 hover:text-mexico-green transition duration-300">Nosotros</a>
-                <a href="#contacto" class="text-gray-700 hover:text-mexico-green transition duration-300">Contacto</a>
+                <a href="#inicio" class="text-gray-700 hover:text-blue-700 transition duration-300">Inicio</a>
+                <a href="#servicios" class="text-gray-700 hover:text-blue-700 transition duration-300">Servicios</a>
+                <a href="#galeria" class="text-gray-700 hover:text-blue-700 transition duration-300">Galería</a>
+                <a href="#nosotros" class="text-gray-700 hover:text-blue-700 transition duration-300">Nosotros</a>
+                <a href="#contacto" class="text-gray-700 hover:text-blue-700 transition duration-300">Contacto</a>
                 <a href="#contacto" class="bg-mexico-red text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300 text-sm">Cotizar Ahora</a>
             </div>
             <div class="md:hidden">
@@ -74,9 +121,9 @@
 
     <section id="inicio" class="hero-pattern pt-20 pb-16 md:pt-32 md:pb-24 text-center">
         <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-6xl font-bold text-mexico-green mb-4">Sublimaciones de Alta Calidad</h1>
+            <h1 class="text-4xl md:text-6xl font-bold text-blue-800 mb-4">Sublimaciones de Alta Calidad</h1>
             <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Diseños vibrantes y duraderos para tus prendas, tazas, y más. ¡Plasma tus ideas con nosotros!</p>
-            <a href="#servicios" class="bg-mexico-green text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-opacity-90 transition duration-300 mr-2">Ver Servicios</a>
+            <a href="#servicios" class="bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-800 transition duration-300 mr-2">Ver Servicios</a>
             <a href="#contacto" class="border-2 border-mexico-red text-mexico-red px-8 py-3 rounded-md text-lg font-semibold hover:bg-mexico-red hover:text-white transition duration-300">Contáctanos</a>
         </div>
     </section>
@@ -90,23 +137,29 @@
                         <i class="fas fa-tshirt fa-3x"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Sublimación Textil</h3>
-                    <p class="text-gray-600">Personalizamos playeras, sudaderas, uniformes deportivos y más con calidad fotográfica.</p>
+                    <p class="text-gray-600 text-sm">
+                        Personalizamos una amplia gama de prendas como playeras, sudaderas, polos, uniformes deportivos y más. Utilizamos tintas de alta calidad que se fusionan con la tela, garantizando diseños vibrantes, resistentes al lavado y al uso diario. Ideal para eventos, promociones o moda personalizada.
+                    </p>
                      <img src="https://placehold.co/600x400/CE1126/FFFFFF?text=Imagen+Textil" alt="Imagen de Sublimación Textil" class="mt-4 rounded-md mx-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar'">
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
-                    <div class="mb-4 text-mexico-green">
+                    <div class="mb-4 text-blue-700">
                         <i class="fas fa-mug-hot fa-3x"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Tazas Personalizadas</h3>
-                    <p class="text-gray-600">Creamos tazas únicas para regalos, eventos o tu negocio. Diseños resistentes al lavado.</p>
+                    <p class="text-gray-600 text-sm">
+                        Crea tazas únicas y originales para cualquier ocasión: regalos de cumpleaños, recuerdos para eventos, material promocional para tu negocio o simplemente para disfrutar tu bebida favorita con estilo. Nuestros diseños son duraderos y aptos para lavavajillas y microondas.
+                    </p>
                      <img src="https://placehold.co/600x400/006847/FFFFFF?text=Imagen+Taza" alt="Imagen de Taza Personalizada" class="mt-4 rounded-md mx-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar'">
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
                      <div class="mb-4 text-gray-700">
                         <i class="fas fa-mouse-pointer fa-3x"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Otros Artículos</h3>
-                    <p class="text-gray-600">Sublimamos mouse pads, llaveros, termos, gorras y una gran variedad de promocionales.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Otros Artículos Promocionales</h3>
+                    <p class="text-gray-600 text-sm">
+                        Más allá de textiles y tazas, sublimamos una gran variedad de artículos promocionales y regalos personalizados: mouse pads, llaveros, termos, gorras, cojines, rompecabezas y mucho más. Convierte objetos cotidianos en piezas únicas con tu diseño.
+                    </p>
                      <img src="https://placehold.co/600x400/eeeeee/333333?text=Imagen+Articulos" alt="Imagen de Otros Artículos" class="mt-4 rounded-md mx-auto" onerror="this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+al+cargar'">
                 </div>
             </div>
@@ -174,6 +227,58 @@
 
         </div>
     </section>
+
+    <section id="testimonios" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"¡Excelente calidad y atención! Mis playeras quedaron justo como las imaginé. Muy recomendados."</p>
+                    <p class="font-semibold text-gray-800">- Ana G.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"Pedí unas tazas personalizadas para un evento y llegaron a tiempo y perfectas. El diseño se ve increíble."</p>
+                    <p class="font-semibold text-gray-800">- Carlos M.</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Preguntas Frecuentes</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="border-b border-gray-300 py-4">
+                    <button class="w-full text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ('faq1')">
+                        <span>¿Qué tipo de archivos de diseño aceptan?</span>
+                        <i class="fas fa-chevron-down" id="icon-faq1"></i>
+                    </button>
+                    <div id="faq1" class="mt-2 text-gray-600 hidden">
+                        Aceptamos archivos en formatos JPG, PNG, PDF, AI, EPS y PSD en alta resolución. Si tienes dudas, contáctanos.
+                    </div>
+                </div>
+                <div class="border-b border-gray-300 py-4">
+                    <button class="w-full text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ('faq2')">
+                        <span>¿Cuál es el tiempo de entrega?</span>
+                        <i class="fas fa-chevron-down" id="icon-faq2"></i>
+                    </button>
+                    <div id="faq2" class="mt-2 text-gray-600 hidden">
+                        El tiempo de entrega varía según la cantidad y complejidad del pedido, generalmente es de X a Y días hábiles una vez aprobado el diseño. Te daremos un estimado al cotizar.
+                    </div>
+                </div>
+                <div class="border-b border-gray-300 py-4">
+                    <button class="w-full text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ('faq3')">
+                        <span>¿Realizan envíos a toda la República Mexicana?</span>
+                        <i class="fas fa-chevron-down" id="icon-faq3"></i>
+                    </button>
+                    <div id="faq3" class="mt-2 text-gray-600 hidden">
+                        Sí, realizamos envíos a nivel nacional. El costo y tiempo de envío se calcularán al momento de tu pedido.
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
     <section id="nosotros" class="py-16 bg-white">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
@@ -182,31 +287,52 @@
             <div class="md:w-1/2">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Nosotros</h2>
                 <p class="text-gray-600 mb-4">
-                    En <span class="font-semibold text-mexico-green">Sublimaciones Guerrero</span>, somos apasionados por el diseño y la calidad. Llevamos años ofreciendo soluciones de personalización para individuos y empresas, utilizando las mejores técnicas de sublimación para garantizar resultados excepcionales.
+                    En <span class="font-semibold text-blue-700">Sublimaciones Guerrero</span>, somos un equipo apasionado por la creatividad y la personalización. Con años de experiencia en el arte de la sublimación, nos dedicamos a transformar tus ideas en productos de alta calidad que destacan. Nuestra misión es ofrecer soluciones de personalización innovadoras y duraderas, siempre con un toque del vibrante espíritu mexicano.
                 </p>
                 <p class="text-gray-600">
-                    Nuestro compromiso es transformar tus ideas en productos tangibles y vibrantes, reflejando siempre la identidad y el espíritu mexicano en cada detalle.
+                    Nos enorgullece trabajar de cerca con nuestros clientes, entendiendo sus necesidades para ofrecer resultados que superen sus expectativas. Ya sea para un proyecto personal, un evento especial o material promocional para tu empresa, estamos aquí para ayudarte a plasmar tus diseños con la mejor calidad.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-16 bg-mexico-green text-white">
+    <section id="ubicacion" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Encuéntranos</h2>
+            <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+                <p class="text-gray-700 mb-4">Aquí podrías incluir un mapa interactivo (como Google Maps) o la dirección de tu ubicación física si tienes una tienda o taller.</p>
+                <div class="bg-gray-300 h-64 rounded-md flex items-center justify-center text-gray-600">
+                    [Espacio para Mapa de Ubicación]
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="py-16 bg-blue-700 text-white">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Listo para Empezar tu Proyecto?</h2>
             <p class="text-lg mb-10 max-w-2xl mx-auto">Contáctanos hoy mismo para obtener una cotización o resolver tus dudas. ¡Estamos aquí para ayudarte!</p>
             <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl text-gray-800">
                 <form action="#" method="POST"> <div class="mb-4">
                         <label for="name" class="block text-sm font-medium text-gray-700 text-left mb-1">Nombre</label>
-                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mexico-green" placeholder="Tu Nombre Completo">
+                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" placeholder="Tu Nombre Completo">
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-sm font-medium text-gray-700 text-left mb-1">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mexico-green" placeholder="tu@correo.com">
+                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" placeholder="tu@correo.com">
+                    </div>
+                     <div class="mb-4">
+                        <label for="phone" class="block text-sm font-medium text-gray-700 text-left mb-1">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" placeholder="Tu número de teléfono">
+                    </div>
+                     <div class="mb-4">
+                        <label for="subject" class="block text-sm font-medium text-gray-700 text-left mb-1">Asunto</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" placeholder="Asunto del mensaje o cotización">
                     </div>
                     <div class="mb-6">
                         <label for="message" class="block text-sm font-medium text-gray-700 text-left mb-1">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mexico-green" placeholder="Describe tu idea o consulta..."></textarea>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" placeholder="Describe tu idea o consulta..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-mexico-red text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition duration-300">
                         Enviar Mensaje
@@ -226,6 +352,13 @@
         </div>
     </section>
 
+    <div class="social-icons-float">
+        <a href="#" aria-label="Facebook" class="fab fa-facebook-f"></a>
+        <a href="#" aria-label="Instagram" class="fab fa-instagram"></a>
+        <a href="#" aria-label="X" class="fab fa-x-twitter"></a>
+        <a href="https://wa.me/5214078946" aria-label="WhatsApp" class="fab fa-whatsapp"></a>
+    </div>
+
 
     <footer class="bg-gray-800 text-gray-400 py-8">
         <div class="container mx-auto px-6 text-center">
@@ -234,13 +367,7 @@
                 <p class="text-sm">Diseño inspirado en México.</p>
                 <p class="text-sm mt-1">Creado por: Bertycc</p>
             </div>
-             <div class="flex justify-center space-x-4">
-                <a href="#" aria-label="Facebook" class="hover:text-mexico-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram" class="hover:text-mexico-white transition duration-300"><i class="fab fa-instagram"></i></a>
-                 <a href="#" aria-label="X" class="hover:text-mexico-white transition duration-300"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://wa.me/5214078946" aria-label="WhatsApp" class="hover:text-mexico-white transition duration-300"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
+             </div>
     </footer>
 
     <script>
@@ -274,9 +401,10 @@
         }
 
 
-        // JavaScript for Gallery Section Toggles
+        // JavaScript for Gallery Section Toggles and FAQ Toggles
         // Using window.onload to ensure all elements and assets are fully loaded
         window.onload = function() {
+            // Gallery Toggles
             const textilButton = document.getElementById('toggle-textil-gallery');
             const textilGallery = document.getElementById('textil-gallery');
             const iconTextil = document.getElementById('icon-textil');
@@ -335,6 +463,21 @@
                 });
             } else {
                  console.error("Otros toggle button not found!");
+            }
+
+            // FAQ Toggles
+            // Function to toggle FAQ answer visibility and icon rotation
+            window.toggleFAQ = function(faqId) {
+                const answer = document.getElementById(faqId);
+                const icon = document.getElementById('icon-' + faqId);
+
+                if (answer && icon) {
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                } else {
+                    console.error("Attempted to toggle FAQ with missing elements:", answer, icon);
+                }
             }
         };
 
